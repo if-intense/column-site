@@ -1,5 +1,6 @@
 <template>
-    <main>
+   <div class="flex-container">
+        <main>
         <!-- <img :src="thumbnail && thumbnail.url"> -->
         <picture v-if="thumbnail"> 
         <source media="(min-width: 768px)" type="image/webp" :srcset="`${thumbnail.url}?w=600&fm=webp, ${thumbnail.url}?w=1200&fm=webp 2x`" /> 
@@ -16,6 +17,7 @@
             
         </div>
     </main>
+   </div>
 </template>
 
 <<script>
@@ -33,10 +35,17 @@ export default {
 
 <style lang="scss" scoped>
 
+
+.flex-container {
+    width:100%;
+   
+}
 main {
     width: 85%;
     margin: 0 auto;
     background:rgba(233,233,233,0.7);
+    background:url('https://res.cloudinary.com/rfujiwar23/image/upload/v1628067950/ifing/dummy-bg.jpg') no-repeat;
+    // background:red;
     height:100vh;
 }
 
