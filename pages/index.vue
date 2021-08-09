@@ -1,24 +1,6 @@
 <template>
   <div class="flex-container">
-    <div>
-      <b-navbar toggleable="lg" type="dark" variant="dark">
-        <b-navbar-brand href="#">NavBar</b-navbar-brand>
-
-        <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-
-        <b-collapse id="nav-collapse" is-nav>
-          
-
-          <!-- Right aligned nav items -->
-          <b-navbar-nav class="ml-auto new">
-           <b-navbar-nav>
-            <b-nav-item href="#"><span class="nav_eng">Link</span><span class="nav_jp">リンク</span></b-nav-item>
-            <b-nav-item href="#" disabled>Disabled</b-nav-item>
-          </b-navbar-nav>
-          </b-navbar-nav>
-        </b-collapse>
-      </b-navbar>
-    </div>
+    
    
     <div class="container">
       <div class="row">
